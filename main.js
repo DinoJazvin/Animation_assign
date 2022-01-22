@@ -4,7 +4,7 @@ const ASSET_MANAGER = new AssetManager();
 
 ASSET_MANAGER.queueDownload("./sonic.png");
 ASSET_MANAGER.queueDownload("./back.png");
-//ASSET_MANAGER.queueDownload("./MetalDesertBackground.png");
+ASSET_MANAGER.queueDownload("./MetalDesertBackground.png");
 
 ASSET_MANAGER.downloadAll(() => {
 	const canvas = document.getElementById("gameWorld");
