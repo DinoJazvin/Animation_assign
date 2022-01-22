@@ -1,10 +1,8 @@
 class MetalDesertBackground {
     constructor(game){
         this.game = game;
-        this.animator = new Animator(ASSET_MANAGER.getAsset("./MetalDesertBackground.png"), 0, 0, 0, 0, 0, 0);
-       // this.x = 0;
-       // this.y = 500;
-       // this.speed = 200;
+        this.animator = new Animator(ASSET_MANAGER.getAsset("./MetalDesertBackground.png"), 0, 0, 960, 576, 0, 100000);
+
     };
 
     update(){
