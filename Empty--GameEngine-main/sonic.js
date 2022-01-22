@@ -3,14 +3,18 @@ class sonic {
         this.game = game;
         this.animator = new Animator(ASSET_MANAGER.getAsset("./sonic.png"), 0, 0, 38, 50, 8, 0.15);
         this.x = 0;
-        this.y = 500;
+        this.y = 170;
         this.speed = 200;
     };
 
     update(){
         this.x += this.speed * this.game.clockTick;
-        if(this.x > 800)
+        if(this.x > 800){
             this.x = 0;
+            this.y = 170;
+        }
+        if(this.x > 400)
+            this.y += .95;
     };
 
     draw(ctx){
